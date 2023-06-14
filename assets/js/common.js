@@ -2,12 +2,12 @@
 (function () {
     const email = {
         address: "info@icerde.com",
-        display: "info[at]icerde[.]com"
+        display: "info [at] icerde.com"
     };
 
     const element = document.getElementById("footer-email");
     if (element) {
-        const html = `<a href="mailto:${email.address}" class="email">${email.display}</a>`;
+        const html = `<span>contact: <a href="mailto:${email.address}" class="email">${email.display}</a></span>`;
         element.innerHTML = html;
     }
 
