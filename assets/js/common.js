@@ -7,7 +7,7 @@
 
     const element = document.getElementById("footer-email");
     if (element) {
-        const html = `<a href="${email.address}">${email.display}</a>`;
+        const html = `<a href="mailto:${email.address}">${email.display}</a>`;
         element.innerHTML = html;
     }
 })();
